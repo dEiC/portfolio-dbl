@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content%}
+    <p> to je vsebina about strani</p>
+    {% if cities %}
+        <p>In year {{year}} my favorite cities are:</p>
+        <ul>
+            {% for city in cities %}
+                <li>{{city}}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+{% endblock content %}

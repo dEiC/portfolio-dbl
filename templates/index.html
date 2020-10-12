@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content%}
+<p> to je vsebina indexa {{ year }} </p>
+<p>In year {{ year }} my favorite cities are: </p>
+{% if cities %}
+    <ul>
+{% for city in cities %}
+    <li>{{ city }}</li>
+{% endfor %}
+    </ul>
+{% endif %}
+{% endblock content %}

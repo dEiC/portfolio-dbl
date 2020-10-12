@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Hello {{ name }}!</p>
+
+    {% block content %}
+        <p>this is content</p>
+    {% endblock content%}
+
+    <ul>
+        <li>
+            <a href="/">Main Page</a>
+        </li>
+        <li>
+            <a href="/about">About Page</a>
+        </li>
+    </ul>
+</body>
+</html>
